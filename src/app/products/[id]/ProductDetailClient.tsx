@@ -50,11 +50,8 @@ export function ProductDetailClient({ productId, product: fallbackProduct, relat
 
   const name        = product.name[language]
   const description = product.description[language]
-  const whatsapp = generateWhatsAppLink(
-  name,
-  size,
-  Number(price ?? 0)
-)
+  const price = product.prices[size]!
+  const whatsapp = generateWhatsAppLink(name, size, price)
 
   const handleShare = async () => {
     if (navigator.share) {
