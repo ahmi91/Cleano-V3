@@ -9,7 +9,6 @@ import { useStore } from '@/store/useStore'
 import { useContentStore } from '@/store/useContentStore'
 import { PriceToggle } from '@/components/products/PriceToggle'
 import { ProductCard } from '@/components/products/ProductCard'
-import { TikTokGrid } from '@/components/tiktok/TikTokEmbed'
 import { generateWhatsAppLink } from '@/lib/utils'
 import type { Product, SizeOption } from '@/lib/types'
 
@@ -199,22 +198,6 @@ export function ProductDetailClient({ productId, product: fallbackProduct, relat
             </div>
           </motion.div>
         </div>
-
-        {/* TikTok videos */}
-        {product.tiktokVideos.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="mb-12"
-          >
-            <TikTokGrid
-              videos={product.tiktokVideos}
-              title={t.productDetail.tiktokVideos}
-              subtitle={t.productDetail.tiktokDesc}
-            />
-          </motion.div>
-        )}
 
         {/* Related products */}
         {displayRelated.length > 0 && (
