@@ -29,7 +29,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
   const [hovered, setHovered] = useState(false)
 
   const name  = product.name[language]
-  const price = product.prices[localSize]
+  const price = product.prices[localSize]!
 
   const whatsappLink = generateWhatsAppLink(name, localSize, price)
 
