@@ -1,0 +1,47 @@
+[
+  {
+    "id": "laundry",
+    "name": {
+      "en": "Laundry",
+      "am": "ልብስ ማጠቢያ"
+    },
+    "sortOrder": 1,
+    "status": "active"
+  },
+  {
+    "id": "multipurpose",
+    "name": {
+      "en": "Multipurpose",
+      "am": "ባለ ብዙ አላማ"
+    },
+    "sortOrder": 2,
+    "status": "active"
+  },
+  {
+    "id": "floor",
+    "name": {
+      "en": "Floor",
+      "am": "ወለል ማጽጃ"
+    },
+    "sortOrder": 3,
+    "status": "active"
+  },
+  {
+    "id": "dishes",
+    "name": {
+      "en": "Dishes",
+      "am": "ምግብ ዕቃ ማጠቢያ"
+    },
+    "sortOrder": 4,
+    "status": "active"
+  },
+  {
+    "id": "baby",
+    "name": {
+      "en": "Baby",
+      "am": "ሕጻናት"
+    },
+    "sortOrder": 5,
+    "status": "active"
+  }
+]
